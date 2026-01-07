@@ -1,0 +1,117 @@
+PACKNAME,RULENAME
+Critical Conformance Pack ,acm-certificate-expiration-check
+Critical Conformance Pack ,cloudfront-no-deprecated-ssl-protocols
+Critical Conformance Pack ,cloudfront-traffic-to-origin-encrypted
+Critical Conformance Pack ,cloudfront-viewer-policy-https
+Critical Conformance Pack ,dynamodb-table-encryption-enabled
+Critical Conformance Pack ,ecs-no-environment-secrets
+Critical Conformance Pack ,iam-password-policy
+Critical Conformance Pack ,iam-root-access-key-check
+Critical Conformance Pack ,mfa-enabled-for-iam-console-access
+Critical Conformance Pack ,codebuild-project-envvar-awscred-check
+Critical Conformance Pack ,kms-cmk-not-scheduled-for-deletion
+Critical Conformance Pack ,root-account-mfa-enabled
+Critical Conformance Pack ,sagemaker-endpoint-configuration-kms-key-configured
+Critical Conformance Pack ,sagemaker-notebook-instance-kms-key-configured
+Critical Conformance Pack ,sagemaker-notebook-no-direct-internet-access
+Critical Conformance Pack ,restricted-ssh
+Critical Conformance Pack ,rds-instance-public-access-check
+Critical Conformance Pack ,s3-account-level-public-access-blocks
+Critical Conformance Pack ,s3-bucket-public-read-prohibited
+Critical Conformance Pack ,s3-bucket-public-write-prohibited
+Dev Platform Conformance Pack,alertingintegrationcomplianceB7EEB6AA
+Dev Platform Conformance Pack,apigatewaylogscompliance480E44F4
+Dev Platform Conformance Pack,applicationdeploypipelinecomplianceE7A8DC2B
+Dev Platform Conformance Pack,authdeploypipelinecomplianceF1026BDC
+Dev Platform Conformance Pack,budgetalertscompliance1002F8D9
+Dev Platform Conformance Pack,buildnotificationscompliance835EC2E5
+Dev Platform Conformance Pack,certificatecompliance3F4DFB02
+Dev Platform Conformance Pack,certificateexpirycomplianceCD049069
+Dev Platform Conformance Pack,cloudfrontdistributioncompliance7F5414DE
+Dev Platform Conformance Pack,cloudfrontmonitoringalarmcomplianceF485818D
+Dev Platform Conformance Pack,cloudwatchalarmstackcompliance23CC0EB5
+Dev Platform Conformance Pack,cognitoidpcomplianceF3D597E5
+Dev Platform Conformance Pack,containerimagerepositorycomplianceD453DCB2
+Dev Platform Conformance Pack,containersignercompliance96BD2D6E
+Dev Platform Conformance Pack,controltowerexecutioncompliance34E20425
+Dev Platform Conformance Pack,deploytemplatetestcomplianceD4F572A1
+Dev Platform Conformance Pack,deploymentanalysiscompliance0DC7EC52
+Dev Platform Conformance Pack,deploymentgrafanaannotationcomplianceE7511B29
+Dev Platform Conformance Pack,ecrimagescanfindingsloggercompliance745F2545
+Dev Platform Conformance Pack,ecscanarydeploymentcomplianceD1347D7B
+Dev Platform Conformance Pack,examplewafbootstrapcomplianceF26AC338
+Dev Platform Conformance Pack,githubidentitycomplianceD20DDFA7
+Dev Platform Conformance Pack,grafanakeyrotationcomplianceB9CDD559
+Dev Platform Conformance Pack,grafanametricscompliance078AC181
+Dev Platform Conformance Pack,identitybrokeroidcprovidercompliance7BBA3C1E
+Dev Platform Conformance Pack,signercompliance99D04E05
+Dev Platform Conformance Pack,testimagerepositorycomplianceD88F1B56
+Dev Platform Conformance Pack,uploadbucketcompliance3B50775F
+Dev Platform Conformance Pack,vpccomplianceE89B04EB
+High Conformance Pack,cloudfront-distribution-associated-with-waf
+High Conformance Pack,cloudtrail-cloudwatch-logs-enabled
+High Conformance Pack,cloudtrail-encryption-enabled
+High Conformance Pack,cloudtrail-log-file-validation-enabled
+High Conformance Pack,cloudtrail-s3-dataevents-enabled
+High Conformance Pack,cloudtrail-security-trail-enabled
+High Conformance Pack,multi-region-cloudtrail-enabled
+High Conformance Pack,dax-encryption-enabled
+High Conformance Pack,dynamodb-table-encrypted-kms
+High Conformance Pack,desired-instance-tenancy
+High Conformance Pack,ec2-ebs-encryption-by-default
+High Conformance Pack,ec2-instance-no-public-ip
+High Conformance Pack,ec2-no-amazon-key-pair
+High Conformance Pack,ecr-private-image-scanning-enabled
+High Conformance Pack,ecs-awsvpc-networking-enabled
+High Conformance Pack,eks-cluster-supported-version
+High Conformance Pack,eks-secrets-encrypted
+High Conformance Pack,guardduty-enabled-centralized
+High Conformance Pack,iam-customer-policy-blocked-kms-actions
+High Conformance Pack,iam-policy-blacklisted-check
+High Conformance Pack,iam-role-managed-policy-check
+High Conformance Pack,iam-user-group-membership-check
+High Conformance Pack,iam-user-no-policies-check
+High Conformance Pack,access-keys-rotated
+High Conformance Pack,codebuild-project-artifact-encryption
+High Conformance Pack,codebuild-project-s3-logs-encrypted
+High Conformance Pack,lambda-inside-vpc
+High Conformance Pack,alb-http-drop-invalid-header-enabled
+High Conformance Pack,alb-waf-enabled
+High Conformance Pack,alb-http-to-https-redirection-check
+High Conformance Pack,elb-acm-certificate-required
+High Conformance Pack,elb-custom-security-policy-ssl-check
+High Conformance Pack,elb-deletion-protection-enabled
+High Conformance Pack,elb-logging-enabled
+High Conformance Pack,elb-predefined-security-policy-ssl-check
+High Conformance Pack,elb-tls-https-listeners-only
+High Conformance Pack,fms-webacl-resource-policy-check
+High Conformance Pack,fms-webacl-rulegroup-association-check
+High Conformance Pack,netfw-policy-default-action-fragment-packets
+High Conformance Pack,netfw-policy-default-action-full-packets
+High Conformance Pack,restricted-common-ports
+High Conformance Pack,service-vpc-endpoint-enabled
+High Conformance Pack,shield-advanced-enabled-autorenew
+High Conformance Pack,vpc-flow-logs-enabled
+High Conformance Pack,vpc-peering-dns-resolution-check
+High Conformance Pack,redshift-cluster-public-access-check
+High Conformance Pack,redshift-require-tls-ssl
+High Conformance Pack,redshift-audit-logging-enabled
+High Conformance Pack,autoscaling-multiple-az
+High Conformance Pack,s3-bucket-acl-prohibited
+High Conformance Pack,s3-bucket-level-public-access-prohibited
+High Conformance Pack,s3-bucket-logging-enabled
+High Conformance Pack,s3-bucket-policy-grantee-check
+High Conformance Pack,s3-bucket-server-side-encryption-enabled
+High Conformance Pack,s3-bucket-ssl-requests-only
+High Conformance Pack,s3-default-encryption-kms
+High Conformance Pack,secretsmanager-secret-unused
+High Conformance Pack,waf-global-rule-not-empty
+High Conformance Pack,waf-global-webacl-not-empty
+High Conformance Pack,waf-regional-rule-not-empty
+High Conformance Pack,waf-regional-rulegroup-not-empty
+High Conformance Pack,waf-regional-webacl-not-empty
+High Conformance Pack,wafv2-logging-enabled
+SAM Pipeline Conformance Pack,samdeploypipelinecompliance1AF7D7C5
+Pab Conformance Pack,inspector-lambda-code-scan-enabled
+Pab Conformance Pack,inspector-lambda-standard-scan-enabled
+Pab Conformance Pack,lambda-function-settings-check

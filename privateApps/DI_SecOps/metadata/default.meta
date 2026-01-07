@@ -1,0 +1,124 @@
+# Application-level permissions
+
+[]
+access = read : [ * ], write : [ sc_admin ]
+
+### INDEXES
+
+[indexes]
+export = system
+
+
+### EVENT TYPES
+
+[eventtypes]
+export = system
+
+
+### PROPS
+
+[props]
+export = system
+
+
+### TRANSFORMS
+
+[transforms]
+export = system
+
+
+### LOOKUPS
+
+[lookups]
+export = system
+
+
+### VIEWSTATES: even normal users should be able to create shared viewstates
+
+[viewstates]
+access = read : [ * ], write : [ * ]
+export = system
+
+[visualizations/tagcloud]
+export = system
+
+
+### CUSTOM ### 
+
+#User-level permissions
+
+[transforms/Account-Mapping]
+access = read : [ gds-050_digital_identity_firewallmanager_index_access, gds-050_digital_identity_fraud_index_access, gds-050_digital_identity_power, gds-050_digital_identity_user, gds-050_fraud_app_access, sc_admin ], write : [ gds-050_digital_identity_power, sc_admin ]
+export = system
+owner = shaun.peterguntrip@digital.cabinet-office.gov.uk
+version = 9.3.2411.119
+modtime = 1763132742.257621000
+
+#lookups
+[lookups/gds_di_aws-accounts-ou.csv]
+access = read : [ gds-050_digital_identity_firewallmanager_index_access, gds-050_digital_identity_fraud_index_access, gds-050_digital_identity_power, gds-050_digital_identity_user, gds-050_fraud_app_access ], write : [ gds-050_digital_identity_power, gds-050_digital_identity_user ]
+export = system
+owner = shaun.peterguntrip@digital.cabinet-office.gov.uk
+version = 9.3.2411.114
+modtime = 1756302224.621299000
+
+[transforms/Account-Mapping]
+access = read : [ gds-050_digital_identity_firewallmanager_index_access, gds-050_digital_identity_fraud_index_access, gds-050_digital_identity_power, gds-050_digital_identity_user, gds-050_fraud_app_access, sc_admin ], write : [ gds-050_digital_identity_power, sc_admin ]
+export = system
+owner = shaun.peterguntrip@digital.cabinet-office.gov.uk
+version = 9.3.2411.119
+modtime = 1763132742.257621000
+
+[lookups/vpc-tcp-flags.csv]
+owner = shaun.peterguntrip@digital.cabinet-office.gov.uk
+version = 9.2.2403.109
+modtime = 1728650378.338465000
+
+[transforms/VPC-flags]
+access = read : [ * ], write : [ * ]
+export = none
+owner = shaun.peterguntrip@digital.cabinet-office.gov.uk
+version = 9.3.2411.119
+modtime = 1763134724.058302000
+
+[lookups/GDS_AWS_Accounts_PODs.csv]
+access = read : [ gds-050_digital_identity_firewallmanager_index_access, gds-050_digital_identity_power, gds-050_digital_identity_user, gds-050_fraud_app_access, power_capability, user_capability ], write : [ gds-050_digital_identity_power ]
+export = system
+owner = william.hanley@digital.cabinet-office.gov.uk
+version = 9.2.2406.109
+modtime = 1732879607.690311000
+
+[transforms/POD-Mapping]
+access = read : [ gds-050_digital_identity_firewallmanager_index_access, gds-050_digital_identity_power, gds-050_digital_identity_user, gds-050_fraud_app_access ], write : [ gds-050_digital_identity_power ]
+export = system
+owner = william.hanley@digital.cabinet-office.gov.uk
+version = 9.2.2403.109
+modtime = 1731596039.485037000
+
+[lookups/AWS_Conformance_Pack.csv]
+access = read : [ gds-050_digital_identity_firewallmanager_index_access, gds-050_digital_identity_power, gds-050_digital_identity_user, gds-050_fraud_app_access ], write : [ gds-050_digital_identity_power ]
+export = none
+owner = william.hanley@digital.cabinet-office.gov.uk
+version = 9.2.2403.109
+modtime = 1731600188.990894000
+
+[transforms/Conformance-Pack]
+access = read : [ gds-050_digital_identity_firewallmanager_index_access, gds-050_digital_identity_power, gds-050_digital_identity_user, gds-050_fraud_app_access ], write : [ gds-050_digital_identity_power ]
+export = none
+owner = william.hanley@digital.cabinet-office.gov.uk
+version = 9.2.2403.109
+modtime = 1731602237.041075000
+
+[lookups/AWS-TrafficPath.csv]
+access = read : [ gds-050_digital_identity_firewallmanager_index_access, gds-050_digital_identity_power, gds-050_digital_identity_user, gds-050_fraud_app_access ], write : [ gds-050_digital_identity_power ]
+export = none
+owner = william.hanley@digital.cabinet-office.gov.uk
+version = 9.2.2406.109
+modtime = 1732892241.443304000
+
+[transforms/AWS-TrafficFlow]
+access = read : [ gds-050_digital_identity_firewallmanager_index_access, gds-050_digital_identity_power, gds-050_digital_identity_user, gds-050_fraud_app_access ], write : [ gds-050_digital_identity_power ]
+export = none
+owner = william.hanley@digital.cabinet-office.gov.uk
+version = 9.2.2406.109
+modtime = 1732892261.339723000

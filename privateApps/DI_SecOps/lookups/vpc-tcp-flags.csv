@@ -1,0 +1,11 @@
+"tcp_flag_message","tcp_flag"
+"N/A","-"
+"N/A",0
+FIN,1
+"SYN-ACK",18
+"SYN-ACK-FIN",19
+SYN,2
+"SYN-FIN",3
+RST,4
+"FIN-RST",5
+"FIN-SYN-RST",7
